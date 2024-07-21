@@ -31,13 +31,13 @@ export class ProductsController {
   }
 
   // @Get(':id')
-  @MessagePattern({ cmd: 'find_one_products' })
+  @MessagePattern({ cmd: 'find_one_product' })
   findOne(@Payload('id') id: string) {
     return this.productsService.findOne(+id);
   }
 
   // @Patch(':id')
-  @MessagePattern({ cmd: 'update_products' })
+  @MessagePattern({ cmd: 'update_product' })
   update(
     // @Param('id') id: string,
     // @Body() updateProductDto: UpdateProductDto
@@ -47,7 +47,7 @@ export class ProductsController {
   }
 
   // @Delete(':id')
-  @MessagePattern({ cmd: 'delete_products' })
+  @MessagePattern({ cmd: 'delete_product' })
   remove(@Payload('id') id: string) {
     return this.productsService.remove(+id);
   }
