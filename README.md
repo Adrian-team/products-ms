@@ -28,3 +28,9 @@
 6. Transformar REST a Microservicio
 7. Aplicaciones Híbridas Rest + Microservicios (esto se verá a profundidad en la sección de Auth)
 8. GitHub - Organizaciones
+
+#### Temario curso seccion 08 (02-products-app/client-gateway)
+
+1. Agregamos un modulo para la comunicacion con nats
+2. Descargamos Nats a traves de docker.
+3. Confuguracion de la comunicacion a traves de nats
